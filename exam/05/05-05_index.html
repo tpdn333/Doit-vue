@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Vue Template - Directives</title>
+</head>
+
+<body>
+    <div id="app">
+        <button v-on:click="clickBtn">클릭</button>
+    </div>
+    <script>
+        // new Vue({
+        //     el: '#app',
+        //     methods: {
+        //         clickBtn: function (num) {
+        //             return alert("clicked " + num + " times");
+        //         }
+        //     }
+        // });
+
+        new Vue({
+            el: '#app',
+            methods: {
+                clickBtn: function (event) {
+                    console.log(event);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
